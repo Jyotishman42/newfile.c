@@ -1,20 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,c,a=0,b=1;
+    int n;
+    int a=0,b=1,c=0;
     printf("enter the no. of term:");
     scanf("%d",&n);
-
-    int count=0;
-
-    printf("%d terms of fibonacci number : %d %d",n,a,b);
-    while(count<n-2)
-    {
-        c=a+b;
-        a=b;
-        b=c;
-        printf(" %d ",c);
-        count++;
+    while(c<n){
+    c=a+b;
+    a=b;
+    b=c;
     }
-    return 1;
+    if(c==n)
+    printf("fibonacci");
+    else
+    printf ("not fibonacci ");
+    return 0;
 }
